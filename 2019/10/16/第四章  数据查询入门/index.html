@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="通配符的应用及使用    运算符 含义    &amp;gt; 大于   &amp;gt;= 大于等于   &amp;lt; 小于   &amp;lt;= 小于等于   = 等于   !=或&amp;lt;&amp;gt; 不等于   is null 是否为空   is not null 是否不为空   in 判断一个值是in列表中的任意一个值   not in 判断一个值不是in列表中的任意一个值   like 通配符匹配   % 通配所有">
+  <meta name="description" content="第四章  数据查询入门查询所有人的所有信息 select id,stunum,name,nation from stuinfo; select * from stuinfo; 查询年龄大于1000的同学姓名和年龄 select name,age,nation from stuinfo where age&amp;gt;1000; 查询年龄大于1000的同学姓名，并且把重复信息合并 select disti">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2019/10/15/通配符的应用及使用/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/第四章  数据查询入门/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="通配符的应用及使用    运算符 含义    &amp;gt; 大于   &amp;gt;= 大于等于   &amp;lt; 小于   &amp;lt;= 小于等于   = 等于   !=或&amp;lt;&amp;gt; 不等于   is null 是否为空   is not null 是否不为空   in 判断一个值是in列表中的任意一个值   not in 判断一个值不是in列表中的任意一个值   like 通配符匹配   % 通配所有">
+<meta property="og:description" content="第四章  数据查询入门查询所有人的所有信息 select id,stunum,name,nation from stuinfo; select * from stuinfo; 查询年龄大于1000的同学姓名和年龄 select name,age,nation from stuinfo where age&amp;gt;1000; 查询年龄大于1000的同学姓名，并且把重复信息合并 select disti">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-15T03:22:12.881Z">
+<meta property="og:updated_time" content="2019-10-16T08:40:48.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="通配符的应用及使用    运算符 含义    &amp;gt; 大于   &amp;gt;= 大于等于   &amp;lt; 小于   &amp;lt;= 小于等于   = 等于   !=或&amp;lt;&amp;gt; 不等于   is null 是否为空   is not null 是否不为空   in 判断一个值是in列表中的任意一个值   not in 判断一个值不是in列表中的任意一个值   like 通配符匹配   % 通配所有">
+<meta name="twitter:description" content="第四章  数据查询入门查询所有人的所有信息 select id,stunum,name,nation from stuinfo; select * from stuinfo; 查询年龄大于1000的同学姓名和年龄 select name,age,nation from stuinfo where age&amp;gt;1000; 查询年龄大于1000的同学姓名，并且把重复信息合并 select disti">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,76 +154,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-通配符的应用及使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-第四章  数据查询入门" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>通配符的应用及使用</p>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&gt;</td>
-<td>大于</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>大于等于</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>小于</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>小于等于</td>
-</tr>
-<tr>
-<td>=</td>
-<td>等于</td>
-</tr>
-<tr>
-<td>!=或&lt;&gt;</td>
-<td>不等于</td>
-</tr>
-<tr>
-<td>is null</td>
-<td>是否为空</td>
-</tr>
-<tr>
-<td>is not null</td>
-<td>是否不为空</td>
-</tr>
-<tr>
-<td>in</td>
-<td>判断一个值是in列表中的任意一个值</td>
-</tr>
-<tr>
-<td>not in</td>
-<td>判断一个值不是in列表中的任意一个值</td>
-</tr>
-<tr>
-<td>like</td>
-<td>通配符匹配</td>
-</tr>
-<tr>
-<td>%</td>
-<td>通配所有</td>
-</tr>
-<tr>
-<td>_</td>
-<td>通配一个</td>
-</tr>
-<tr>
-<td>between and</td>
-<td>判断一个值是否在两个值之间</td>
-</tr>
-</tbody></table>
+        <h2 id="第四章-数据查询入门"><a href="#第四章-数据查询入门" class="headerlink" title="第四章  数据查询入门"></a>第四章  数据查询入门</h2><p>查询所有人的所有信息</p>
+<p>select id,stunum,name,nation</p>
+<p>from stuinfo;</p>
+<p>select *</p>
+<p>from stuinfo;</p>
+<p>查询年龄大于1000的同学姓名和年龄</p>
+<p>select name,age,nation</p>
+<p>from stuinfo</p>
+<p>where age&gt;1000;</p>
+<p>查询年龄大于1000的同学姓名，并且把重复信息合并</p>
+<p>select distinct name</p>
+<p>from stuinfo</p>
+<p>where age&gt;1000;</p>
+<p>查询所有人的学号和姓名，只显示第五十页的数据，每页五条</p>
+<p>select stunum,name</p>
+<p>from stuinfo</p>
+<p>limit 50,5;</p>
+<p>查询所有学员信息，按照年龄降序排序</p>
+<p>select *</p>
+<p>from stuinfo</p>
+<p>order by age asc;</p>
+<p>查询名字是两个字，按照年龄降序排列</p>
+<p>select *</p>
+<p>from stuinfo</p>
+<p>where name like ‘__’</p>
+<p>order by age desc;</p>
+<p>按照民族进行排序</p>
+<p>select *</p>
+<p>from stuinfo </p>
+<p>order by nation desc;</p>
 
       
 
@@ -303,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/15/通配符的应用及使用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/第四章  数据查询入门/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -317,17 +282,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/16/第四章  数据查询入门/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/15/增删改语句/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/10/15/通配符的应用及使用/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>

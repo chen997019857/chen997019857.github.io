@@ -152,6 +152,83 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第四章  数据查询入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第四章-数据查询入门"><a href="#第四章-数据查询入门" class="headerlink" title="第四章  数据查询入门"></a>第四章  数据查询入门</h2><p>查询所有人的所有信息</p>
+<p>select id,stunum,name,nation</p>
+<p>from stuinfo;</p>
+<p>select *</p>
+<p>from stuinfo;</p>
+<p>查询年龄大于1000的同学姓名和年龄</p>
+<p>select name,age,nation</p>
+<p>from stuinfo</p>
+<p>where age&gt;1000;</p>
+<p>查询年龄大于1000的同学姓名，并且把重复信息合并</p>
+<p>select distinct name</p>
+<p>from stuinfo</p>
+<p>where age&gt;1000;</p>
+<p>查询所有人的学号和姓名，只显示第五十页的数据，每页五条</p>
+<p>select stunum,name</p>
+<p>from stuinfo</p>
+<p>limit 50,5;</p>
+<p>查询所有学员信息，按照年龄降序排序</p>
+<p>select *</p>
+<p>from stuinfo</p>
+<p>order by age asc;</p>
+<p>查询名字是两个字，按照年龄降序排列</p>
+<p>select *</p>
+<p>from stuinfo</p>
+<p>where name like ‘__’</p>
+<p>order by age desc;</p>
+<p>按照民族进行排序</p>
+<p>select *</p>
+<p>from stuinfo </p>
+<p>order by nation desc;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/16/第四章  数据查询入门/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-通配符的应用及使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
