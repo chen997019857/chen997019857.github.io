@@ -152,6 +152,95 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-事务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>索引是对数据库表中一列或多列的值进行排序的一种结构，使用索引可提高数据库中特定数据的查询速度。</p>
+<table>
+<thead>
+<tr>
+<th>普通索引</th>
+<th>允许在定义索引的列中插入重复值和空值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>唯一索引</td>
+<td>索引列的值必须唯一，但允许有空值（只能有一个）</td>
+</tr>
+<tr>
+<td>主键索引</td>
+<td>是特殊的唯一索引，不允许有空值且一定是唯一的</td>
+</tr>
+<tr>
+<td>组合索引</td>
+<td>在表中的多个字段组合上创建索引，只有查询条件使用了这些字段的左边字段时，索引才会被使用</td>
+</tr>
+<tr>
+<td>全文索引</td>
+<td>类型为fulltext，在定义索引的列上支持值得全文查找，允许在这些索引列中插入重复值和空值。全文索引可以在char、varchar或者text类型中的列上设置，同时mysql中只有myISAM存储引擎支持全文索引</td>
+</tr>
+<tr>
+<td>空间索引</td>
+<td>空间索引是对空间数据类型的字段建立的索引，mysql中的空间数据类型有四种，分别是：geometry、point、linestring、polygon。</td>
+</tr>
+</tbody></table>
+<p>alert table命令创建索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">laert table 表名 add [unique|fulltext|spatial] index 索引名(字段名[(长度)] [asc|desc]);</span><br></pre></td></tr></table></figure>
+
+<p>create index创建索引</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">creat [unique|fulltext|spatial] index index_name on table_name(col_name[length],……) [asc|desc]</span><br></pre></td></tr></table></figure>
+
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>事务是一种机制，它包含了一组数据库操作命令，而且将所有的命令作为一个整体一起向数据库提交或撤销。</p>
+<p>特点：</p>
+<p>原子性，一致性，隔离性，持久性，简称ACID</p>
+<p>如何在SQL编程中使用事务</p>
+<p>1）开始事务：BEGIN或start transaction</p>
+<p>2）提交事务：commit</p>
+<p>3) 回滚（撤销）事务：rollback</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/事务/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-聚合函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
